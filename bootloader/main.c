@@ -46,6 +46,8 @@
 #include "frontend/fe_tools.h"
 #include "frontend/fe_info.h"
 
+#include "saves/save_dump.h"
+
 //TODO: ugly.
 gfx_ctxt_t gfx_ctxt;
 gfx_con_t gfx_con;
@@ -1090,6 +1092,8 @@ ment_t ment_backup[] = {
 	MDEF_CAPTION("-- GPP Partitions --", 0xFF0AB9E6),
 	MDEF_HANDLER("Backup eMMC SYS", dump_emmc_system),
 	MDEF_HANDLER("Backup eMMC USER", dump_emmc_user),
+	MDEF_CAPTION("-- Save Management --", 0xFF3FE196),
+	MDEF_HANDLER("Backup USER Saves", save_dump),
 	MDEF_END()
 };
 
