@@ -21,7 +21,7 @@
 /   0: Basic functions are fully enabled.
 /   1: f_stat(), f_getfree(), f_unlink(), f_mkdir(), f_truncate() and f_rename()
 /      are removed.
-/   2: f_opendir(), f_readdir() and f_closedir() are removed in addition to 1.
+/   2: f_opendir(), f_readdir() and f_closedir() are removed in addition to 1.FF_VOLUMES        
 /   3: f_lseek() function is removed in addition to 2. */
 
 
@@ -163,12 +163,12 @@
 / Drive/Volume Configurations
 /---------------------------------------------------------------------------*/
 
-#define FF_VOLUMES		1
+#define FF_VOLUMES		2
 /* Number of volumes (logical drives) to be used. (1-10) */
 
 
-#define FF_STR_VOLUME_ID	0
-#define FF_VOLUME_STRS		"sd"
+#define FF_STR_VOLUME_ID	1
+#define FF_VOLUME_STRS		"sd", "emmc"
 /* FF_STR_VOLUME_ID switches support for volume ID in arbitrary strings.
 /  When FF_STR_VOLUME_ID is set to 1 or 2, arbitrary strings can be used as drive
 /  number in the path name. FF_VOLUME_STRS defines the volume ID strings for each
