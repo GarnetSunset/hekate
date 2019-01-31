@@ -1,6 +1,4 @@
 /*
- * Copyright (c) 2018 Rajko Stojadinovic
- * Copyright (c) 2018 CTCaer
  * Copyright (c) 2018 GarnetSunset
  *
  * This program is free software; you can redistribute it and/or modify it
